@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Банківські рахунки — демонстрація стилів</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="container">
+  <header class="hero">
+    <div><p class="eyebrow">Лабораторна робота №5</p><h1>Банківські рахунки</h1><p class="subtitle">Демонстрація інтерфейсів, спадкування, статичних властивостей та обробки винятків у PHP.</p></div>
+    <div class="badge">PHP OOP</div>
+  </header>
+  <section class="accounts">
+    <article class="card"><div class="card__top"><p class="card__name">Основний рахунок</p><span class="currency">USD</span></div><p class="balance">650.00</p><p class="card__note">Поточний банківський рахунок</p></article>
+    <article class="card"><div class="card__top"><p class="card__name">Другий рахунок</p><span class="currency">EUR</span></div><p class="balance">150.00</p><p class="card__note">Рахунок у євро</p></article>
+    <article class="card"><div class="card__top"><p class="card__name">Накопичувальний</p><span class="currency">UAH</span></div><p class="balance">10 500.00</p><p class="card__note">Ставка 5%</p></article>
+  </section>
+  <section class="operations"><h2>Журнал тестових операцій</h2><div class="operation-list">
+    <article class="operation operation--success"><div class="operation__icon">✓</div><div><p class="operation__title">Поповнення на 250 USD</p><p class="operation__message">Новий баланс: 750.00 USD</p></div><span class="status">Успішно</span></article>
+    <article class="operation operation--success"><div class="operation__icon">✓</div><div><p class="operation__title">Нарахування 5%</p><p class="operation__message">Баланс після нарахування: 10 500.00 UAH</p></div><span class="status">Успішно</span></article>
+    <article class="operation operation--error"><div class="operation__icon">!</div><div><p class="operation__title">Спроба зняти 1 000 EUR</p><p class="operation__message">Недостатньо коштів</p></div><span class="status">Помилка</span></article>
+  </div></section>
+  <p class="footer">BankAccount та SavingsAccount · Обробка операцій через Exception</p>
+</main>
+</body>
+</html>
